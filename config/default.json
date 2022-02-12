@@ -1,6 +1,6 @@
 {
   "port": 9000,
-  "mongoUri": "mongodb+srv://zedbyl:Ybrbnf543216@cluster0.imfef.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongoUri": "",
   "accessSecret": "super secret from backend",
   "refreshSecret": "super refresh key"
 }
