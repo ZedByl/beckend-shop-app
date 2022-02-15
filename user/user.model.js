@@ -6,7 +6,15 @@ const schema = new Schema({
     phone: {type: String, required: true, unique: true},
     password: {type: String, required: true},
     dateOfBirth: {type: String},
-    image: String
+    image: {type: String},
+    role: {type: String},
+    street: {type: String},
+    house: {type: String},
+    entrance: {type: String},
+    floor: {type: String},
+    apartment: {type: String},
+    intercom: {type: String},
+    orders: [String]
 }, {
     timestamps: true
 });

@@ -1,6 +1,7 @@
 const {Schema, model} = require('mongoose');
 
 const schema = new Schema({
+    userId: {type: String},
     name: {type: String, required: true},
     email: {type: String, required: true},
     phone: {type: String, required: true},
@@ -15,7 +16,8 @@ const schema = new Schema({
     floor: {type: String},
     apartment: {type: String},
     intercom: {type: String},
-    itemsProduct: {type: Object},
+    comment: {type: String},
+    itemsProduct: [Object],
 }, {
     timestamps: {createdAt: 'created_at'}
 });

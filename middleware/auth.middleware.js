@@ -1,4 +1,4 @@
-const tokenService = require('../services/token.service');
+const AuthorizationService = require('../authorization/authorization.service')
 
 module.exports = (req, res, next) => {
     if (req.method === 'OPTIONS') {
@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
             return res.status(401).json({message: 'Unauthorized'});
         }
 
-        const data = tokenService.validateAccess(token);
+        const data = AuthorizationService.validateAccess(token);
 
         req.user = data;
 
