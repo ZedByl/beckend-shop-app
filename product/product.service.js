@@ -29,7 +29,7 @@ class ProductService {
 
     async addProduct(dto) {
         try {
-            const product = await Product.create(dto);
+            const product = await Product.create({ ...dto, count: 1 });
             return product;
         } catch (e) {
             return {

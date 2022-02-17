@@ -25,7 +25,7 @@ class AuthorizationService {
 
             if (!isPasswordEqual) {
                 return {
-                    message: 'Неверный пароль',
+                    message: 'Неверный емейл или пароль',
                     error: true,
                     status: 400
                 }
@@ -168,7 +168,7 @@ class AuthorizationService {
 
                 if (!isPasswordEqual) {
                     return {
-                        message: 'Неверный пароль',
+                        message: 'Неверный емейл или пароль',
                         error: true,
                         status: 400
                     }
