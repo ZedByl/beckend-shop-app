@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/api', routes);
 
-const PORT = config.get('port') ?? 9000;
+const PORT = process.env.PORT ?? 9000;
 
 async function start() {
     try {
